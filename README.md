@@ -119,7 +119,7 @@ app.base-url=http://localhost:8080/url-shortner/
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/RupendraJaiswal/URLShortner.git
 ```
 
 ## Build Project
