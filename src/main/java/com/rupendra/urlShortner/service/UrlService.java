@@ -19,6 +19,8 @@ public class UrlService {
 
     @Value("${app.base-url}")
     private String baseUrl;
+    @Value("${url.expiry.days}")
+    private Long expiryDays;
 
     public UrlResponseDto shortenUrl(UrlRequestDto dto) {
 
@@ -29,7 +31,7 @@ public class UrlService {
                 .shortCode(code)
                 .clickCount(0L)
                 .createdAt(LocalDateTime.now())
-                .expiryDate(LocalDateTime.now().plusDays(30))
+                .expiryDate(LocalDateTime.now().plusDays(expiryDays))
                 .build();
 
         repository.save(mapping);
