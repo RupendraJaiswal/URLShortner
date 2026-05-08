@@ -190,18 +190,6 @@ Automatically redirects to original URL.
 
 ---
 
-# Future Enhancements
-
-- JWT Authentication
-- User Management
-- Redis Caching
-- Analytics Dashboard
-- QR Code Generation
-- Custom Alias Support
-- Docker Deployment
-- Kubernetes Deployment
-
----
 
 # Author
 
